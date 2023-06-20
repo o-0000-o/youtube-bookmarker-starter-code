@@ -1,15 +1,15 @@
 {
-    "name": "My YT Bookmarks",
+    "name": "Virtual Language Immersion",
     "version": "0.1.0",
-    "description": "Saving timestamps in YT videos",
-    "permissions": ["storage", "tabs"],
+    "description": "Learn any language of your choice at your own pace",
+    "permissions": ["activetab", "declarativeContent", "tabs", "webRequest", "webRequestBlocking", "storage" ],
     "host_permissions": ["https://*.youtube.com/*"],
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
-        "matches": ["https://*.youtube.com/*"],
+        "matches": ["https://*.google.com/*"],
         "js": ["contentScript.js"]
       }
     ],
